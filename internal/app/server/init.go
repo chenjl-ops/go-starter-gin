@@ -3,6 +3,7 @@ package server
 import (
 	"github.com/gin-gonic/gin"
 	"go-starter-gin/internal/app/apollo"
+	"go-starter-gin/internal/app/mysql"
 	"go-starter-gin/internal/app/test"
 	"log"
 )
@@ -18,7 +19,15 @@ TODO
 // 初始化 apollo config
 func initApolloConfig() {
 	var err error
-	apollo.ReadRemoteConfig()
+	err = apollo.ReadRemoteConfig()
+	if nil != err {
+		log.Fatal(err)
+	}
+}
+
+// 初始化mysql
+func initMysql() {
+	err := mysql.NewMysql()
 	if nil != err {
 		log.Fatal(err)
 	}

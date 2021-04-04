@@ -21,6 +21,7 @@ func NewServer() (*server, error){
 
 func StartServer() error {
 	initApolloConfig()
+	initMysql()
 
 	server, err1 := NewServer()
 	if err1 != nil {

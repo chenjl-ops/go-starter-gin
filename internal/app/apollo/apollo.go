@@ -17,10 +17,10 @@ const (
 var Config *Specification
 
 func GetApolloUrl(env string) string {
-	// url, _ := fmt.Printf("http://configserver-%s.chj.cloud", env)
+	url := fmt.Sprintf("http://configserver-%s.chj.cloud", env)
 	// URL Apollo 地址
-	url, _ := fmt.Printf("http://configserver-%s.xxx.xxx", env)
-	return fmt.Sprintln(url)
+	// url, _ := fmt.Printf("http://configserver-%s.xxx.xxx", env)
+	return url
 }
 
 func NewApollo() (apollo *Apollo, err error) {
@@ -38,7 +38,7 @@ func NewApollo() (apollo *Apollo, err error) {
 	}
 	apolloServerUrl := GetApolloUrl(env)
 	// apolloServerUrl := apolloConfigServers[env]
-	fmt.Println("URL:", apolloServerUrl)
+	// fmt.Println("URL:", apolloServerUrl)
 	apollo = &Apollo{
 		AppID:           appName,
 		Cluster:         cluster,
@@ -89,8 +89,8 @@ func ReadRemoteConfigCustom(input *Apollo) error {
 		return err
 	}
 	// 调试apollo配置信息使用
-	// fmt.Printf("%+v\n", config)
-	// fmt.Println("redis_sentinels:", v.GetString("redis_sentinels"))
+	fmt.Printf("%+v\n", config)
+	fmt.Println("redis_sentinels:", v.GetString("redis_sentinels"))
 
 	//监听配置变化
 	//v.WatchRemoteConfigOnChannel()

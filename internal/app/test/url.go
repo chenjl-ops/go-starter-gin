@@ -11,6 +11,7 @@ func Url(r *gin.Engine) {
 			c.String(200, "ok")
 		})
 		v1.GET("test1", test)
+		v1.GET("test2", testSql)
 	}
 }
 
