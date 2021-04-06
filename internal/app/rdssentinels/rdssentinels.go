@@ -8,7 +8,8 @@ import (
 	"time"
 )
 
-var redisClient *redis.Client
+var RedisClient *redis.Client
+var RedisConfig *Redis
 
 func NewRedis(cfg *Redis) *Redis {
 	// 格式化成 数组
@@ -38,6 +39,7 @@ func NewRedis(cfg *Redis) *Redis {
 	}
 	rdb.RedisClient = rdb.initClient()
 	rdb.Ping()
+	RedisConfig = rdb
 	return rdb
 }
 
@@ -47,8 +49,8 @@ func (r *Redis) initClient() *redis.Client {
 		SentinelAddrs: r.RedisSentinelAddress,
 		Password:      r.RedisPasswd,
 	})
-	redisClient = rdb
-	return redisClient
+	RedisClient = rdb
+	return RedisClient
 }
 
 func (r *Redis) GetKey(name string) *redis.StringCmd {

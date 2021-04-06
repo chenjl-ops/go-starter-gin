@@ -30,9 +30,12 @@ func testSql(c *gin.Context) {
 }
 
 func testRedis(c *gin.Context) {
-	rds := rdssentinels.NewRedis(nil)
-	rds.SetKey("testKey", "this is test demo", 3600 * time.Second)
-	result := rds.GetKey("testKey")
+	//rds := rdssentinels.NewRedis(nil)
+	//rds.SetKey("testKey", "this is test demo", 3600 * time.Second)
+	//result := rds.GetKey("testKey")
+
+	rdssentinels.RedisConfig.SetKey("testKey", "this is test demo", 3600 * time.Second)
+	result := rdssentinels.RedisConfig.GetKey("testKey")
 
 	c.JSON(200, gin.H{
 		"redis_testKey": result.Val(),
