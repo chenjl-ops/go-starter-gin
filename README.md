@@ -13,7 +13,7 @@
 - 提供携程Apollo配置，提供统一配置管理
 - 提供Gin Url分组管理，提供统一路由插拔策略
 - 提供Mysql，提供统一数据库操作Client
-- 提供Redis，提供统一Redis操作，Set Get //进行中
+- 提供Redis，提供统一Redis操作，Set Get
 - 提供test 模块，熟悉如何完成业务开发
 
 ## 使用
@@ -36,6 +36,10 @@ go run cmd/app/main.go
 
 #### 请求 http://localhost:8080/v1/test2 验证数据库查询接口可行性
 ![image](https://user-images.githubusercontent.com/81603118/113648966-24c96e00-96c0-11eb-89b8-3a93b0f31ca7.png)
+
+#### 请求 http://localhost:8080/v1/test3 验证redis写入和查询是否正常
+![image](https://user-images.githubusercontent.com/81603118/113668218-7e439400-96e4-11eb-8f82-b8981e6d32f7.png)
+
 
 
 
