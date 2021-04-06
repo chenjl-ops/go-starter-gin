@@ -12,6 +12,7 @@ func Url(r *gin.Engine) {
 		})
 		v1.GET("test1", test)
 		v1.GET("test2", testSql)
+		v1.GET("test3", testRedis)
 	}
 }
 

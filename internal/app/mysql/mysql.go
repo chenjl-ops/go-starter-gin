@@ -12,7 +12,7 @@ import (
 var Engine *xorm.Engine
 
 func NewMysql() error {
-	fmt.Printf("apollo data: %+v", apollo.Config)
+
 	result := &DB{
 		UserName: apollo.Config.MysqlUserName,
 		Password: apollo.Config.MysqlPassword,
@@ -35,7 +35,5 @@ func (db *DB) initMysql() error {
 		return err
 	}
 	Engine = mysqlEngine
-
-	fmt.Println("mysql Engine:", Engine)
 	return nil
 }

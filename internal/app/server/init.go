@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"go-starter-gin/internal/app/apollo"
 	"go-starter-gin/internal/app/mysql"
+	"go-starter-gin/internal/app/rdssentinels"
 	"go-starter-gin/internal/app/test"
 	"log"
 )
@@ -31,6 +32,11 @@ func initMysql() {
 	if nil != err {
 		log.Fatal(err)
 	}
+}
+
+// 初始化redis
+func initRedis() {
+	rdssentinels.NewRedis(nil)
 }
 
 // 加载gin 路由配置

@@ -89,8 +89,9 @@ func ReadRemoteConfigCustom(input *Apollo) error {
 		return err
 	}
 	// 调试apollo配置信息使用
-	fmt.Printf("%+v\n", config)
-	fmt.Println("redis_sentinels:", v.GetString("redis_sentinels"))
+	// fmt.Printf("%+v\n", config)
+	fmt.Printf("apollo data: %+v", Config)
+	//fmt.Println("redis_sentinels:", v.GetString("redis_sentinels"))
 
 	//监听配置变化
 	//v.WatchRemoteConfigOnChannel()
