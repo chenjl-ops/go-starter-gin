@@ -35,6 +35,8 @@ go run cmd/app/main.go
 ![image](https://user-images.githubusercontent.com/81603118/113645881-47588880-96ba-11eb-8786-e1cc1057943e.png)
 
 #### 请求 http://localhost:8080/v1/test2 验证数据库查询接口可行性
+![image](https://user-images.githubusercontent.com/81603118/113648966-24c96e00-96c0-11eb-89b8-3a93b0f31ca7.png)
+
 
 
 
