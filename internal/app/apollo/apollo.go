@@ -16,6 +16,24 @@ const (
 
 var Config *Specification
 
+//获取当前运行环境
+func GetEnv() string {
+	env := os.Getenv(runEnvKey)
+	return env
+}
+
+//获取当前运行应用名称
+func GetAppName() string {
+	appName := os.Getenv(appNameKey)
+	return appName
+}
+
+//获取当前运行cluster name
+func GetRunCluster() string {
+	clusterName := os.Getenv(runClusterKey)
+	return clusterName
+}
+
 func GetApolloUrl(env string) string {
 	url := fmt.Sprintf("http://configserver-%s.chj.cloud", env)
 	// URL Apollo 地址
@@ -24,15 +42,15 @@ func GetApolloUrl(env string) string {
 }
 
 func NewApollo() (apollo *Apollo, err error) {
-	appName := os.Getenv(appNameKey)
+	appName := GetAppName()
 	if appName == "" {
 		return nil, errors.Errorf("Env appName Has Empty")
 	}
-	env := os.Getenv(runEnvKey)
+	env := GetEnv()
 	if env == "" {
 		return nil, errors.Errorf("Env env Has Empty")
 	}
-	cluster := os.Getenv(runClusterKey)
+	cluster := GetRunCluster()
 	if cluster == "" {
 		return nil, errors.Errorf("Env cluster Has Empty")
 	}

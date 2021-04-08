@@ -6,6 +6,7 @@ import (
 	"go-starter-gin/internal/app/mysql"
 	"go-starter-gin/internal/app/rdssentinels"
 	"go-starter-gin/internal/app/test"
+	"go-starter-gin/internal/app/middleware/logger"
 	"log"
 )
 
@@ -37,6 +38,13 @@ func initMysql() {
 // 初始化redis
 func initRedis() {
 	rdssentinels.NewRedis(nil)
+}
+
+// 初始化log配置
+func (s *server) initLog() *gin.Engine {
+	logs := logger.LogMiddleware()
+	s.App.Use(logs)
+	return s.App
 }
 
 // 加载gin 路由配置

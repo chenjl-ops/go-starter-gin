@@ -28,7 +28,13 @@ func StartServer() error {
 	if err1 != nil {
 		return err1
 	}
-	err := server.InitRouter().Run()
+	// 初始化日志
+	server.initLog()
+	// 初始化路由
+	server.InitRouter()
+
+	//启动服务
+	err := server.Run()
 	if err != nil {
 		return err
 	}
