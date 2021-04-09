@@ -1,6 +1,7 @@
 package server
 
 import (
+	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
@@ -9,15 +10,11 @@ import (
 	"go-starter-gin/internal/app/mysql"
 	"go-starter-gin/internal/app/rdssentinels"
 	"go-starter-gin/internal/app/test"
-	"log"
 )
 
 /*
 TODO
-1、日志初始化
-2、通用数据库mysql封装
-3、通用Redis封装
-4、Event跨实例间通讯
+1、Event跨实例间通讯
 */
 
 // 初始化 apollo config

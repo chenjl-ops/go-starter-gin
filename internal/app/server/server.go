@@ -7,17 +7,16 @@ import (
 
 type server struct {
 	//Config   *apollo.Specification
-	App      *gin.Engine
+	App *gin.Engine
 	//Validate *validator.Validate
 }
 
-func NewServer() (*server, error){
+func NewServer() (*server, error) {
 	return &server{
 		//Config: globalConfig,
 		App: gin.New(),
 	}, nil
 }
-
 
 func StartServer() error {
 	initApolloConfig()
@@ -25,7 +24,7 @@ func StartServer() error {
 	initRedis()
 
 	server, err1 := NewServer()
-	server.App.Use(Cors())
+	// server.App.Use(Cors())
 	if err1 != nil {
 		return err1
 	}
@@ -49,10 +48,9 @@ func (s *server) Run() error {
 	return s.App.Run(":8080")
 }
 
-
-func Cors() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		c.Header("Access-Control-Allow-Origin", "*")
-		c.Next()
-	}
-}
+//func Cors() gin.HandlerFunc {
+//	return func(c *gin.Context) {
+//		c.Header("Access-Control-Allow-Origin", "*")
+//		c.Next()
+//	}
+//}

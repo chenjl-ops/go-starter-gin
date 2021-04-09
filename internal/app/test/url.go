@@ -1,7 +1,7 @@
 package test
 
 import (
-"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 )
 
 func Url(r *gin.Engine) {
@@ -15,4 +15,3 @@ func Url(r *gin.Engine) {
 		v1.GET("test3", testRedis)
 	}
 }
-

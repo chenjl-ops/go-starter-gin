@@ -1,11 +1,11 @@
 package test
 
 import (
+	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
 	"go-starter-gin/internal/app/apollo"
 	"go-starter-gin/internal/app/mysql"
 	"go-starter-gin/internal/app/rdssentinels"
-	"log"
 	"time"
 )
 
@@ -46,7 +46,7 @@ func testRedis(c *gin.Context) {
 	//rds.SetKey("testKey", "this is test demo", 3600 * time.Second)
 	//result := rds.GetKey("testKey")
 
-	rdssentinels.RedisConfig.SetKey("testKey", "this is test demo", 3600 * time.Second)
+	rdssentinels.RedisConfig.SetKey("testKey", "this is test demo", 3600*time.Second)
 	result := rdssentinels.RedisConfig.GetKey("testKey")
 
 	c.JSON(200, gin.H{

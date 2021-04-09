@@ -21,8 +21,8 @@ func NewRedis(cfg *Redis) *Redis {
 
 	rdb := &Redis{
 		RedisSentinelAddress: rdsAddress,
-		RedisPasswd: apollo.Config.RedisPasswd,
-		RedisMasterName: apollo.Config.RedisMasterName,
+		RedisPasswd:          apollo.Config.RedisPasswd,
+		RedisMasterName:      apollo.Config.RedisMasterName,
 	}
 
 	// 参数覆盖初始化配置

@@ -1,6 +1,5 @@
 package mysql
 
-
 import _ "github.com/go-sql-driver/mysql"
 
 import (
@@ -16,9 +15,9 @@ func NewMysql() error {
 	result := &DB{
 		UserName: apollo.Config.MysqlUserName,
 		Password: apollo.Config.MysqlPassword,
-		Host: apollo.Config.MysqlHost,
-		Port: apollo.Config.MysqlPort,
-		DBName: apollo.Config.MysqlDBName,
+		Host:     apollo.Config.MysqlHost,
+		Port:     apollo.Config.MysqlPort,
+		DBName:   apollo.Config.MysqlDBName,
 	}
 	err := result.initMysql()
 	if err != nil {
@@ -29,7 +28,7 @@ func NewMysql() error {
 
 // 初始化mysql engine/client
 func (db *DB) initMysql() error {
-	mysqlString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8", db.UserName,db.Password,db.Host,db.Port,db.DBName)
+	mysqlString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8", db.UserName, db.Password, db.Host, db.Port, db.DBName)
 	mysqlEngine, err := xorm.NewEngine("mysql", mysqlString)
 	if err != nil {
 		return err

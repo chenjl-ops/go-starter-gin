@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="680ffc5b-8daf-41fb-a509-9f8ccddbdc9a" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/apollo/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/apollo/struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/middleware/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/middleware/logger/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/mysql/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/mysql/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/rdssentinels/rdssentinels.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/rdssentinels/rdssentinels.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/server/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/server/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/test/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/test/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/test/url.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/test/url.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/test/views.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/test/views.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
