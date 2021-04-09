@@ -40,6 +40,10 @@ go run cmd/app/main.go
 #### 请求 http://localhost:8080/v1/test3 验证redis写入和查询是否正常
 ![image](https://user-images.githubusercontent.com/81603118/113668218-7e439400-96e4-11eb-8f82-b8981e6d32f7.png)
 
+### 请求 http://localhost:8080/swagger/index.html 验证swagger是否正常
+![image](https://user-images.githubusercontent.com/81603118/114156869-9b32ce00-9955-11eb-821c-3e184e077886.png)
+
+
 
 
 
