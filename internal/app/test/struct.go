@@ -7,3 +7,9 @@ type RobotTicket struct {
 	ProcessingPerson string `xorm:"VARCHAR(32) 'processing_person'"`
 	Desc             string `xorm:"VARCHAR(1024)" 'desc'`
 }
+
+type Response struct {
+	Code int         `json:"code"`
+	Data interface{} `json:"data"`
+	Msg  string      `json:"msg"`
+}

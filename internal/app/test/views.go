@@ -9,11 +9,23 @@ import (
 	"time"
 )
 
-
+// @Tag Test API
+// @Summary List apollo some config
+// @Description get apollo config
+// @Accept  json
+// @Produce  json
+// @Success 200 {array} Response
+// @Header 200 {string} Response
+// @Failure 400,404 {object} string "Bad Request"
+// @Router /v1/test1 [get]
 func test(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"RedisSentinels": apollo.Config.RedisSentinelAddress,
-		"RedisCluster": apollo.Config.RedisMasterName,
+	c.JSON(200, Response{
+		Code: 200,
+		Data: map[string]string{
+			"RedisSentinels": apollo.Config.RedisSentinelAddress,
+			"RedisCluster":   apollo.Config.RedisMasterName,
+		},
+		Msg: "success",
 	})
 }
 
