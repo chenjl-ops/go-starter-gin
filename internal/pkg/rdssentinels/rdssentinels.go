@@ -3,7 +3,7 @@ package rdssentinels
 import (
 	"context"
 	"github.com/go-redis/redis/v8"
-	"go-starter-gin/internal/app/apollo"
+	"go-starter-gin/internal/pkg/apollo"
 	"strings"
 	"time"
 )

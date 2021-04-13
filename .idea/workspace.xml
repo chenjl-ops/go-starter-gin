@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="680ffc5b-8daf-41fb-a509-9f8ccddbdc9a" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/mysql/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/mysql/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/mysql/struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/rdssentinels/rdssentinels.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/rdssentinels/rdssentinels.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/apollo/apollo.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/apollo/apollo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/apollo/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/apollo/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/middleware/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/middleware/logger/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/mysql/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/mysql/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/rdssentinels/rdssentinels.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/rdssentinels/rdssentinels.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/app/rdssentinels/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/rdssentinels/struct.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/server/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/server/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/app/test/url.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/test/url.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/app/test/views.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/app/test/views.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +61,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/pkg" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">

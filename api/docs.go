@@ -42,6 +42,9 @@ var doc = `{
                 "produces": [
                     "application/json"
                 ],
+                "tags": [
+                    "Test API"
+                ],
                 "summary": "List apollo some config",
                 "responses": {
                     "200": {

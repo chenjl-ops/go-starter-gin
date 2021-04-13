@@ -5,11 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-	"go-starter-gin/internal/app/apollo"
 	"go-starter-gin/internal/app/middleware/logger"
-	"go-starter-gin/internal/app/mysql"
-	"go-starter-gin/internal/app/rdssentinels"
 	"go-starter-gin/internal/app/test"
+	"go-starter-gin/internal/pkg/apollo"
+	"go-starter-gin/internal/pkg/mysql"
+	"go-starter-gin/internal/pkg/rdssentinels"
 )
 
 /*

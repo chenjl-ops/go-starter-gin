@@ -48,4 +48,6 @@ paths:
           schema:
             type: string
       summary: List apollo some config
+      tags:
+      - Test API
 swagger: "2.0"

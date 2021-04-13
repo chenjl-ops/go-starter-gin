@@ -6,7 +6,7 @@ import (
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/pkg/errors"
 	"github.com/rifflock/lfshook"
-	"go-starter-gin/internal/app/apollo"
+	"go-starter-gin/internal/pkg/apollo"
 	"path"
 	"time"
 )

@@ -3,13 +3,13 @@ package test
 import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	"go-starter-gin/internal/app/apollo"
-	"go-starter-gin/internal/app/mysql"
-	"go-starter-gin/internal/app/rdssentinels"
+	"go-starter-gin/internal/pkg/apollo"
+	"go-starter-gin/internal/pkg/mysql"
+	"go-starter-gin/internal/pkg/rdssentinels"
 	"time"
 )
 
-// @Tag Test API
+// @Tags Test API
 // @Summary List apollo some config
 // @Description get apollo config
 // @Accept  json
