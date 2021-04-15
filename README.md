@@ -29,9 +29,7 @@ go run cmd/app/main.go
 ```
 
 ## CI build 参考如下
-```
 https://github.com/hashicorp/terraform/tree/main/scripts
-```
 
 ## 验证使用
 #### 请求 http://localhost:8080/v1/test 验证普通请求
