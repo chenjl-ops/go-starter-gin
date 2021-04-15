@@ -27,6 +27,12 @@ export RUNTIME_ENV=dev && export RUNTIME_CLUSTER=default && export RUNTIME_APP_N
 
 go run cmd/app/main.go 
 ```
+
+## CI build 参考如下
+```
+https://github.com/hashicorp/terraform/tree/main/scripts
+```
+
 ## 验证使用
 #### 请求 http://localhost:8080/v1/test 验证普通请求
 ![image](https://user-images.githubusercontent.com/81603118/113645745-0a8c9180-96ba-11eb-8c44-1e9e5fc4aa6c.png)
