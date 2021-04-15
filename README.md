@@ -43,6 +43,9 @@ go run cmd/app/main.go
 ### 请求 http://localhost:8080/swagger/index.html 验证swagger是否正常
 ![image](https://user-images.githubusercontent.com/81603118/114156869-9b32ce00-9955-11eb-821c-3e184e077886.png)
 
+### 验证build
+![image](https://user-images.githubusercontent.com/81603118/114799570-7792dc00-9dca-11eb-943a-9b74c1b531d2.png)
+![image](https://user-images.githubusercontent.com/81603118/114799627-a6a94d80-9dca-11eb-90a4-f531a64331a9.png)
 
 
 
