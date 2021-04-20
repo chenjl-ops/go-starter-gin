@@ -5,8 +5,11 @@ go 1.15
 require (
 	github.com/Sirupsen/logrus v1.0.6
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
+	github.com/asim/go-micro v0.23.0 // indirect
+	github.com/asim/go-micro/v3 v3.5.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/gin-gonic/gin v1.7.1
+	github.com/go-log/log v0.2.0 // indirect
 	github.com/go-openapi/spec v0.20.3 // indirect
 	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/go-playground/validator v9.31.0+incompatible
@@ -17,11 +20,14 @@ require (
 	github.com/go-xorm/cmd v0.0.0-20190416075904-e73dbe26b402 // indirect
 	github.com/go-xorm/xorm v0.7.9
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/google/uuid v1.2.0 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
 	github.com/lestrrat-go/strftime v1.0.4 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/micro/go-micro v1.18.0
+	github.com/miekg/dns v1.1.41 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/rifflock/lfshook v0.0.0-20170215182608-1ae91782cf87
 	github.com/shima-park/agollo v1.2.10

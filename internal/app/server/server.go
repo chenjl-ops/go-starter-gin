@@ -18,10 +18,15 @@ func NewServer() (*server, error) {
 	}, nil
 }
 
+func NewMicroServer() {
+
+}
+
 func StartServer() error {
 	initApolloConfig()
 	initMysql()
 	initRedis()
+	initSnowFlake()
 
 	server, err1 := NewServer()
 	// server.App.Use(Cors())
@@ -34,6 +39,16 @@ func StartServer() error {
 	server.InitSwagger()
 	// 初始化路由
 	server.InitRouter()
+
+	//microService := web.NewService(
+	//		web.Name("go-starter-gin.xxx.xxx"),
+	//		web.Address(":8080"),
+	//		web.Handler(server.initLog()),
+	//		web.Handler(server.InitSwagger()),
+	//		web.Handler(server.InitRouter()),
+	//	)
+	//
+	//microService.Run()
 
 	//启动服务
 	err := server.Run()

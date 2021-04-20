@@ -10,6 +10,7 @@ import (
 	"go-starter-gin/internal/pkg/apollo"
 	"go-starter-gin/internal/pkg/mysql"
 	"go-starter-gin/internal/pkg/rdssentinels"
+	"go-starter-gin/internal/pkg/snowflake"
 )
 
 /*
@@ -44,6 +45,11 @@ func (s *server) initLog() *gin.Engine {
 	logs := logger.LogMiddleware()
 	s.App.Use(logs)
 	return s.App
+}
+
+// 初始化雪花算法
+func initSnowFlake() {
+	snowflake.InitSnowWorker(1,1)
 }
 
 // 加载gin 路由配置
