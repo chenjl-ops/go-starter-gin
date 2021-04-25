@@ -28,6 +28,7 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/micro/go-micro v1.18.0
 	github.com/miekg/dns v1.1.41 // indirect
+	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/rifflock/lfshook v0.0.0-20170215182608-1ae91782cf87
 	github.com/shima-park/agollo v1.2.10
