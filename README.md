@@ -28,6 +28,15 @@ export RUNTIME_ENV=dev && export RUNTIME_CLUSTER=default && export RUNTIME_APP_N
 go run cmd/app/main.go 
 ```
 
+## Swagger
+```
+## install swag 
+go get -u github.com/swaggo/swag/cmd/swag
+
+## gen docs
+swag init -g cmd/app/main.go -o ./api
+```
+
 ## CI build 参考如下
 https://github.com/hashicorp/terraform/tree/main/scripts
 
