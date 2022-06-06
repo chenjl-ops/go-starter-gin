@@ -35,7 +35,7 @@ func GetRunCluster() string {
 }
 
 func GetApolloUrl(env string) string {
-	url := fmt.Sprintf("http://configserver-%s.chj.cloud", env)
+	url := fmt.Sprintf("http://configserver-%s.xxx.cloud", env)
 	// URL Apollo 地址
 	// url, _ := fmt.Printf("http://configserver-%s.xxx.xxx", env)
 	return url
