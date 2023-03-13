@@ -1,8 +1,8 @@
 package test
 
 import (
-	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 	"go-starter-gin/internal/pkg/apollo"
 	"go-starter-gin/internal/pkg/mysql"
 	"go-starter-gin/internal/pkg/rdssentinels"

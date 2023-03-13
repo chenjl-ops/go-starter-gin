@@ -11,13 +11,13 @@ DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 cd "$DIR"
 
 # Determine the arch/os combos we're building for
-XC_ARCH=${XC_ARCH:-"386 amd64 arm"}
+XC_ARCH=${XC_ARCH:-"386 amd64 arm arm64"}
 XC_OS=${XC_OS:-linux darwin windows freebsd openbsd solaris}
 XC_EXCLUDE_OSARCH="!darwin/arm !darwin/386"
 
 # Delete the old dir
 echo "==> Removing old directory..."
-rm -f bin/*
+rm -rf bin/*
 rm -rf pkg/*
 mkdir -p bin/
 
@@ -29,7 +29,7 @@ fi
 
 if ! which gox > /dev/null; then
     echo "==> Installing gox..."
-    go get github.com/mitchellh/gox
+    go get github.com/mitchellh/gox@latest
 fi
 
 # Instruct gox to build statically linked binaries

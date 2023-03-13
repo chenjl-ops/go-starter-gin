@@ -1,8 +1,8 @@
 package server
 
 import (
-	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"go-starter-gin/internal/app/middleware/logger"
@@ -49,7 +49,7 @@ func (s *server) initLog() *gin.Engine {
 
 // 初始化雪花算法
 func initSnowFlake() {
-	snowflake.InitSnowWorker(1,1)
+	snowflake.InitSnowWorker(1, 1)
 }
 
 // 加载gin 路由配置

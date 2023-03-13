@@ -18,14 +18,13 @@ func NewServer() (*server, error) {
 	}, nil
 }
 
-func NewMicroServer() {
-
-}
+//func NewMicroServer() {
+//}
 
 func StartServer() error {
-	initApolloConfig()
-	initMysql()
-	initRedis()
+	//initApolloConfig()
+	//initMysql()
+	//initRedis()
 	initSnowFlake()
 
 	server, err1 := NewServer()
@@ -58,7 +57,7 @@ func StartServer() error {
 	return nil
 }
 
-//启动服务
+// 启动服务
 func (s *server) Run() error {
 	return s.App.Run(":8080")
 }

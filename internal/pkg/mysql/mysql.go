@@ -4,8 +4,8 @@ import _ "github.com/go-sql-driver/mysql"
 
 import (
 	"fmt"
-	"github.com/go-xorm/xorm"
 	"go-starter-gin/internal/pkg/apollo"
+	"xorm.io/xorm"
 )
 
 var Engine *xorm.Engine

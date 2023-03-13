@@ -1,11 +1,11 @@
 package logger
 
 import (
-	"github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/pkg/errors"
 	"github.com/rifflock/lfshook"
+	"github.com/sirupsen/logrus"
 	"go-starter-gin/internal/pkg/apollo"
 	"path"
 	"time"
@@ -61,7 +61,7 @@ func Logger() (*logrus.Logger, error) {
 			logrus.DebugLevel: appLogWriter,
 			logrus.ErrorLevel: appLogWriter,
 			logrus.PanicLevel: appLogWriter,
-		}))
+		}, &logrus.JSONFormatter{}))
 
 	return logger, nil
 }

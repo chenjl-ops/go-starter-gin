@@ -76,7 +76,7 @@ func (r *Redis) GetStreamsData(streamName string, groupName string, ss string) *
 	return sb
 }
 
-//测试联通性
+// Ping 测试联通性
 func (r *Redis) Ping() {
 	_, err := r.RedisClient.Ping(context.Background()).Result()
 	if err != nil {

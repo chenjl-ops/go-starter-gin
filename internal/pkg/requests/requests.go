@@ -1,9 +1,9 @@
 package requests
 
 import (
-"encoding/json"
-"github.com/Sirupsen/logrus"
-"net/http"
+	"encoding/json"
+	"github.com/sirupsen/logrus"
+	"net/http"
 )
 
 // 统一请求json格式数据
